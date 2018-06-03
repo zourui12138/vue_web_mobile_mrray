@@ -1,0 +1,42 @@
+@mixin flex {
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -moz-box; /* Firefox 17- */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: -moz-flex; /* Firefox 18+ */
+    display: -ms-flexbox; /* IE 10 */
+    display: flex; /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+}
+@mixin flex-direction(){
+    -webkit-box-orient: vertical;
+    -webkit-box-direction:normal;
+    -moz-box-orient:vertical;
+    -moz-box-direction:normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+@mixin justify-content($arg){
+    -webkit-justify-content: $arg;
+    -moz-justify-content: $arg;
+    -ms-justify-content: $arg;
+    -o-justify-content: $arg;
+    justify-content: $arg;
+}
+@mixin align-items($arg) {
+    -webkit-align-items:$arg;
+    -moz-align-items:$arg;
+    -ms-align-items:$arg;
+    -o-align-items:$arg;
+    align-items:$arg;
+}
+@mixin flex-wrap($arg){
+    -webkit-flex-wrap: $arg;
+    -moz-flex-wrap: $arg;
+    -ms-flex-wrap: $arg;
+    -o-flex-wrap: $arg;
+    flex-wrap:$arg;
+}
+@mixin align-self($arg){
+    align-self: $arg;
+    -webkit-align-self: $arg;
+}
