@@ -25,7 +25,7 @@
         <div class="core_product">
             <header>一个核心平台级产品</header>
             <section>
-                <p>迅鳐区块链即服务(Ray Blockchain as a Service)是拥有自主知识产权的分布式账本系统，其功能和性能均优于其他同类平台。客户可以通过灵活、可扩展的API接口，简便、快捷、高效、低成本的构建基于区块链的服务和应用，推动企业实现业务运行和商业模式创新。</p>
+                <p>迅鳐区块链即服务(RayBlockchain as a Service)是拥有自主知识产权的分布式账本系统，其功能和性能均优于其他同类平台。客户可以通过灵活、可扩展的API接口，简便、快捷、高效、低成本的构建基于区块链的服务和应用，推动企业实现业务运行和商业模式创新。</p>
                 <img :src="img.core_product_icon" alt=""/>
             </section>
         </div>
@@ -180,6 +180,8 @@
                     line-height: 34px;
                     margin-bottom: 10px;
                     color: #fff;
+                    text-align: center;
+                    @include flex;
                     &:nth-child(odd){
                         background: url(imgUrl('field_left_box.png')) no-repeat center left;
                         background-size: auto 100%;
@@ -187,6 +189,13 @@
                     &:nth-child(even){
                         background: url(imgUrl('field_right_box.png')) no-repeat center right;
                         background-size: auto 100%;
+                        @include justify-content(flex-end);
+                    }
+                    span{
+                        width: 160px;
+                    }
+                    strong{
+                        width: 74px;
                     }
                 }
             }
