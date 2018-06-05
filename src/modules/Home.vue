@@ -41,6 +41,69 @@
                 </ul>
             </section>
         </div>
+        <div class="solution">
+            <header>十二大行业解决方案</header>
+            <h1>针对各行业的特点，RBaaS提供定制化的应用，比如：物流也可以通过区块链实现快速、可信的的车货匹配，做到零成本运维；政务方面可以通过区块链实现不同部门间数据的打通，且可控的流通。</h1>
+            <ul>
+                <li>
+                    <img :src="img.solution_icon_1" alt=""/>
+                    <p>电子证照</p>
+                </li>
+                <li>
+                    <img :src="img.solution_icon_2" alt=""/>
+                    <p>电子证照</p>
+                </li>
+                <li>
+                    <img :src="img.solution_icon_3" alt=""/>
+                    <p>电子证照</p>
+                </li>
+                <li>
+                    <img :src="img.solution_icon_4" alt=""/>
+                    <p>电子证照</p>
+                </li>
+                <li>
+                    <img :src="img.solution_icon_5" alt=""/>
+                    <p>电子证照</p>
+                </li>
+                <li>
+                    <img :src="img.solution_icon_6" alt=""/>
+                    <p>电子证照</p>
+                </li>
+                <li>
+                    <img :src="img.solution_icon_7" alt=""/>
+                    <p>电子证照</p>
+                </li>
+                <li>
+                    <img :src="img.solution_icon_8" alt=""/>
+                    <p>电子证照</p>
+                </li>
+                <li>
+                    <img :src="img.solution_icon_9" alt=""/>
+                    <p>电子证照</p>
+                </li>
+                <li>
+                    <img :src="img.solution_icon_10" alt=""/>
+                    <p>电子证照</p>
+                </li>
+                <li>
+                    <img :src="img.solution_icon_11" alt=""/>
+                    <p>电子证照</p>
+                </li>
+                <li>
+                    <img :src="img.solution_icon_12" alt=""/>
+                    <p>电子证照</p>
+                </li>
+            </ul>
+        </div>
+        <div class="partner">
+            <header>三个联合发起单位</header>
+            <h1>迅鳐科技凝结电子科技大学大数据研究中心、网络空间安全研究中心等重磅级机构1０余载技术积淀。努力成为最先“将安全基因注入信息社会”的行业领导企业。</h1>
+            <ul>
+                <li><img :src="img.partner1" alt=""/></li>
+                <li><img :src="img.partner2" alt=""/></li>
+                <li><img :src="img.partner3" alt=""/></li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -49,6 +112,21 @@
     import emphasis_blockChain from '../assets/img/home/emphasis_blockChain.png'
     import emphasis_dataSecurity from '../assets/img/home/emphasis_dataSecurity.png'
     import core_product_icon from '../assets/img/home/core_product_icon.png'
+    import solution_icon_1 from '../assets/img/home/solution_icon_1.png'
+    import solution_icon_2 from '../assets/img/home/solution_icon_2.png'
+    import solution_icon_3 from '../assets/img/home/solution_icon_3.png'
+    import solution_icon_4 from '../assets/img/home/solution_icon_4.png'
+    import solution_icon_5 from '../assets/img/home/solution_icon_5.png'
+    import solution_icon_6 from '../assets/img/home/solution_icon_6.png'
+    import solution_icon_7 from '../assets/img/home/solution_icon_7.png'
+    import solution_icon_8 from '../assets/img/home/solution_icon_8.png'
+    import solution_icon_9 from '../assets/img/home/solution_icon_9.png'
+    import solution_icon_10 from '../assets/img/home/solution_icon_10.png'
+    import solution_icon_11 from '../assets/img/home/solution_icon_11.png'
+    import solution_icon_12 from '../assets/img/home/solution_icon_12.png'
+    import partner1 from '../assets/img/home/partner1.png'
+    import partner2 from '../assets/img/home/partner2.png'
+    import partner3 from '../assets/img/home/partner3.png'
 
     export default {
         name: "Home",
@@ -57,7 +135,22 @@
                 img: {
                     emphasis_blockChain: emphasis_blockChain,
                     emphasis_dataSecurity: emphasis_dataSecurity,
-                    core_product_icon: core_product_icon
+                    core_product_icon: core_product_icon,
+                    solution_icon_1: solution_icon_1,
+                    solution_icon_2: solution_icon_2,
+                    solution_icon_3: solution_icon_3,
+                    solution_icon_4: solution_icon_4,
+                    solution_icon_5: solution_icon_5,
+                    solution_icon_6: solution_icon_6,
+                    solution_icon_7: solution_icon_7,
+                    solution_icon_8: solution_icon_8,
+                    solution_icon_9: solution_icon_9,
+                    solution_icon_10: solution_icon_10,
+                    solution_icon_11: solution_icon_11,
+                    solution_icon_12: solution_icon_12,
+                    partner1: partner1,
+                    partner2: partner2,
+                    partner3: partner3,
                 }
             }
         }
@@ -78,6 +171,7 @@
     @mixin subTitle{
         text-align: justify;
         line-height: 36px;
+        height: 144px;
         font-size: 24px;
         padding-bottom: 30px;
     }
@@ -197,6 +291,54 @@
                     strong{
                         width: 74px;
                     }
+                }
+            }
+        }
+    }
+    .solution{
+        background-color: #fcfcfc;
+        padding: 0 40px 40px;
+        header{
+            @include title;
+        }
+        h1{
+            @include subTitle;
+        }
+        ul{
+            @include flex;
+            @include justify-content(space-between);
+            @include flex-wrap(wrap);
+            padding-top: 30px;
+            li{
+                width: 167px;
+                text-align: center;
+                margin-bottom: 20px;
+                img{
+                    width: 97px;
+                }
+                p{
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .partner{
+        padding: 40px;
+        header{
+            @include title;
+        }
+        h1{
+            @include subTitle;
+        }
+        ul{
+            @include flex;
+            @include justify-content(space-between);
+            li{
+                img{
+                    width: 200px;
                 }
             }
         }
