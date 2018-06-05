@@ -47,11 +47,11 @@
             </header>
             <section>
                 <ul>
-                    <li style="width:134px;"><img :src="img.partner1" alt=""/></li>
-                    <li style="width:134px;"><img :src="img.partner2" alt=""/></li>
-                    <li style="width:134px;"><img :src="img.partner3" alt=""/></li>
-                    <li style="width:134px;"><img :src="img.partner4" alt=""/></li>
-                    <li style="width:134px;"><img :src="img.partner5" alt=""/></li>
+                    <li><img :src="img.partner1" alt=""/></li>
+                    <li><img :src="img.partner2" alt=""/></li>
+                    <li><img :src="img.partner3" alt=""/></li>
+                    <li><img :src="img.partner4" alt=""/></li>
+                    <li><img :src="img.partner5" alt=""/></li>
                     <li><img :src="img.partner6" alt=""/></li>
                     <li><img :src="img.partner7" alt=""/></li>
                     <li><img :src="img.partner8" alt=""/></li>
@@ -191,6 +191,30 @@
                     @include justify-content(center);
                     @include align-items(flex-end);
                     height: 134px;
+                    &:nth-child(1){
+                        width: 134px;
+                        img{width: 80px;}
+                    }
+                    &:nth-child(2){
+                        width: 134px;
+                        img{width: 89px;}
+                    }
+                    &:nth-child(3){
+                        width: 134px;
+                        img{width: 114px;}
+                    }
+                    &:nth-child(4){
+                        width: 134px;
+                        img{width: 91px;}
+                    }
+                    &:nth-child(5){
+                        width: 134px;
+                        img{width: 101px;}
+                    }
+                    &:nth-child(6) img{width: 102px;}
+                    &:nth-child(7) img{width: 104px;}
+                    &:nth-child(8) img{width: 124px;}
+                    &:nth-child(9) img{width: 239px;}
                 }
             }
         }
